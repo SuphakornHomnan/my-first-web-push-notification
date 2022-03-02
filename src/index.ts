@@ -11,7 +11,7 @@ async function bootstrap() {
     cors({
       origin: "*",
       methods: "GET,POST,PATCH,PUT,DELETE,OPTIONS",
-      credentials: true,
+      preflightContinue: false,
       optionsSuccessStatus: 200,
     })
   );
