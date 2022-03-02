@@ -8,7 +8,8 @@
     "clean": "rimraf dist",
     "build": "tsc",
     "start": "yarn clean && yarn build && node .",
-    "gen-vapid-keys": "./node_modules/web-push/src/cli.js generate-vapid-keys"
+    "gen-vapid-keys": "./node_modules/web-push/src/cli.js generate-vapid-keys",
+    "deploy": "vercel deploy --prod"
   },
   "keywords": [],
   "author": "MrNice",
