@@ -1,0 +1,29 @@
+{
+  "name": "express-web-push-notification",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My first implement web push notification",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "start": "yarn clean && yarn build && node .",
+    "gen-vapid-keys": "./node_modules/web-push/src/cli.js generate-vapid-keys"
+  },
+  "keywords": [],
+  "author": "MrNice",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "typescript": "^4.6.2",
+    "web-push": "^3.4.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/web-push": "^3.3.2",
+    "rimraf": "^3.0.2"
+  }
+}
