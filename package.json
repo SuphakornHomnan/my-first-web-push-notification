@@ -4,9 +4,6 @@
   "private": true,
   "description": "My first implement web push notification",
   "main": "src/dist/index.js",
-  "engines": {
-    "node": "16.x"
-  },
   "scripts": {
     "build": "tsc",
     "start": "node .",
