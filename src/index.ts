@@ -19,7 +19,7 @@ async function bootstrap() {
   app.get("/", (req, res) => {
     res.send("Hello notification");
   });
-  app.listen(4000, () => console.log("Service is lauching..."));
+  app.listen(process.env.PORT, () => console.log("Service is lauching..."));
 }
 
 bootstrap();
