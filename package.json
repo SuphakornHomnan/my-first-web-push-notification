@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "My first implement web push notification",
-  "main": "dist/src/index.js",
+  "main": "src/index.ts",
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc",
