@@ -9,10 +9,16 @@ async function bootstrap() {
   app.use(
     cors({
       origin: "*",
+      methods: "GET,POST,PATCH,PUT,DELETE,OPTIONS",
+      credentials: true,
+      optionsSuccessStatus: 200,
     })
   );
   webpushConfig();
   app.use("/notification", notificationRoute);
+  app.get("/", (req, res) => {
+    res.send("Hello notification");
+  });
   app.listen(4000, () => console.log("Service is lauching..."));
 }
 
