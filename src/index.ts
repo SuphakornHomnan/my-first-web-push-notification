@@ -9,7 +9,10 @@ async function bootstrap() {
   webpushConfig();
   app.use(
     cors({
-      origin: "http://localhost:5500/",
+      origin: "*",
+      methods: "GET,POST,PATCH,PUT,DELETE,OPTIONS",
+      credentials: true,
+      optionsSuccessStatus: 200,
     })
   );
   app.use("/notification", notificationRoute);
