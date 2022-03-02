@@ -5,7 +5,8 @@
   "description": "My first implement web push notification",
   "main": "src/index.ts",
   "scripts": {
-    "start": "npx tsc -w",
+    "build": "tsc",
+    "start": "node .",
     "gen-vapid-keys": "./node_modules/web-push/src/cli.js generate-vapid-keys"
   },
   "keywords": [],
