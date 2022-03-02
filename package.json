@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "My first implement web push notification",
-  "main": "src/index.ts",
+  "main": "src/dist/index.js",
   "scripts": {
     "build": "tsc",
     "start": "node .",
