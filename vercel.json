@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "src",
-      "use": "@vercel/node"
+      "src": "package.json",
+      "use": "vercel-sapper"
     }
   ],
   "routes": [
-      {
-          "src": "/(.*)",
-          "dest": "/"
-      }
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
   ]
 }

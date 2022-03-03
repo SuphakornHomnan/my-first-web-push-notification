@@ -5,6 +5,7 @@
   "description": "My first implement web push notification",
   "main": "dist/src/index.js",
   "scripts": {
+    "build": "tsc",
     "start": "node .",
     "gen-vapid-keys": "./node_modules/web-push/src/cli.js generate-vapid-keys"
   },
