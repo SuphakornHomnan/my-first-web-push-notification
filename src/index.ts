@@ -8,7 +8,7 @@ async function bootstrap() {
 
   app.use(
     cors({
-      origin: "127.0.0.1",
+      origin: "*",
       optionsSuccessStatus: 200,
     })
   );
