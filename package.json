@@ -6,7 +6,7 @@
   "main": "dist/src/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node .",
+    "start": "vercel dev",
     "gen-vapid-keys": "./node_modules/web-push/src/cli.js generate-vapid-keys"
   },
   "keywords": [],
